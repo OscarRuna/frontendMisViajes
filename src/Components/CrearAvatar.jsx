@@ -1,7 +1,7 @@
 import { useContext, useEffect, useMemo, useRef, useState } from "react";
 import { FormContext } from "../context/FormContext";
 import avatar from "../imagenes/avatar.jpg";
-import { API_HOST, LOCAL_HOST } from "../../utils/constants";
+import { API_HOST } from "../../utils/constants";
 import { LoginContext } from "../context/LoginContext";
 
 export function FormularioImagenInput({ name, label }) {

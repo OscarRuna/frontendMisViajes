@@ -22,9 +22,9 @@
   position: relative;
 }
 .consulta-entrada-titulo {
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 100%;
-  text-align: center;
+  text-align: right;
   color: var(--color-bordes);
 }
 .consulta-entrada-avatar {
@@ -235,6 +235,10 @@ img.imagen-comentarios {
   }
 }
 @media (min-width: 425px) {
+  .consulta-entrada-titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
   .div-caja-comentarios {
     height: 10rem;
   }

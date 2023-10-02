@@ -39,12 +39,17 @@
   padding: 1rem;
   position: relative;
 }
-.entrada-lista header h2 {
-  font-size: 2rem;
-  width: 100%;
-  text-align: center;
-}
 
+.entrada-lista header h2 {
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: right;
+}
+.main-perfil .entrada-lista header h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 1rem;
+}
 .entrada-heading {
   color: var(--color-bordes);
   text-decoration: none;
@@ -225,6 +230,7 @@
   }
   .form-busqueda {
     font-size: 1.7rem;
+    
   }
   .div-sin-resultado p {
     font-size: 2.2rem;
@@ -256,7 +262,7 @@
   .form-busqueda {
     flex-direction: column;
     height: 100vh;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: start;
     padding: 3rem 5rem 0 5rem;
     font-size: 2rem;
@@ -289,3 +295,20 @@
   }
 }
 
+@media (min-width: 425px) {
+  .entrada-lista header h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .main-perfil .entrada-lista header h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: .5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .form-busqueda {
+    gap: 3rem;
+  }
+}

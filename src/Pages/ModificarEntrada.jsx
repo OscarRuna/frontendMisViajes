@@ -13,21 +13,16 @@ import { useNavigate, useParams } from "react-router-dom";
 import { servicioConsultaEntrada } from "../Api/servicioConsultaEntrada";
 import { servicioModificarEntrada } from "../Api/servicioModificarEntrada";
 import { useGetLogin } from "../../Hooks/useGetLogin";
+import { schemaModificarEntrada } from "../../utils/schemas";
 
-const schema = Joi.object({
-  titulo: Joi.string().max(150).required(),
-  categoria: Joi.string().required(),
-  lugar: Joi.string().max(100).required(),
-  texto: Joi.string().max(150).required(),
-  foto: Joi.array().min(1).max(5).required(),
-});
+
 
 export function ModificarEntrada() {
   const { toastData, showToast } = useToast();
   const [initialValue, setInitialValue] = useState({});
   const { id } = useParams();
   const navigate = useNavigate();
-
+  const schema = schemaModificarEntrada;
   useGetLogin();
 
   useEffect(() => {

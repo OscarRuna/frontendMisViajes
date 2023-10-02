@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { API_HOST, LOCAL_HOST } from "../../utils/constants";
+import { API_HOST } from "../../utils/constants";
 import { BotonIcono } from "./BotonIcono";
 import { SliderPhone } from "./SliderPhone";
 import { servicioListarEntradas } from "../Api/servicioListarEntradas";

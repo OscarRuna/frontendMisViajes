@@ -38,6 +38,7 @@ body {
   overflow-x: hidden;
   margin-bottom: 5rem;
 }
+
 ul {
   padding: 0;
 }
@@ -219,6 +220,10 @@ li {
 .oscuro .caja-comentarios-input {
   border-color: var(--color-modo-oscuro);
 }
+.oscuro .div-sin-resultado {
+  background-color: (var(--color-fondo-medio));
+  border-color: var(--color-modo-oscuro);
+}
 .oscuro .main-perfil .div-sin-resultado {
   background-color: (var(--color-fondo-medio));
   border-color: var(--color-modo-oscuro);
@@ -373,6 +378,12 @@ li {
 .oscuro .caja-comentarios::-webkit-scrollbar-thumb {
   background-color: var(--color-modo-oscuro);
 }
+.oscuro .text-area::-webkit-scrollbar-thumb {
+  background-color: var(--color-modo-oscuro);
+}
+.oscuro .text-area::-webkit-scrollbar-thumb {
+  background-color: var(--color-modo-oscuro);
+}
 @keyframes votar2 {
   0% {
     font-variation-settings: "FILL" 0;
@@ -456,7 +467,7 @@ li {
   background-color: transparent;
 }
 .oscuro::-webkit-scrollbar-thumb {
-  background-color: var(--color-modo-oscuro); /
+  background-color: var(--color-modo-oscuro);
 }
 
 @keyframes volaroscuro {
