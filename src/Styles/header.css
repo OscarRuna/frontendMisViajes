@@ -125,8 +125,8 @@
 .modo {
   width: 2rem;
   height: 2rem;
-  background-color: #f9f10f;
-  box-shadow: 0 0 1rem rgb(227, 163, 36);
+  background-color: var(--color-bordes);
+  box-shadow: 0 0 1rem var(--color-bordes);
   border: 1px solid black;
   border-radius: 50%;
   transition: margin-left 0.5s linear, background-color 0.5s linear,
@@ -147,15 +147,15 @@
   border-radius: 2rem;
   cursor: pointer;
   z-index: 5;
-  margin-left: 29%;
-  margin-top: 1rem
+
+  margin-top: 1rem;
 }
 
 .modos {
   width: 2rem;
   height: 2rem;
-  background-color: #d3e324;
-  box-shadow: 0 0 1rem rgb(227, 163, 36);
+  background-color: var(--color-bordes);
+  box-shadow: 0 0 1rem var(--color-bordes);
   border: 1px solid black;
   border-radius: 50%;
   transition: margin-left 0.5s linear, background-color 0.5s linear,
@@ -163,10 +163,23 @@
 }
 .modos-oscuros {
   margin-left: 3.9rem;
-  background-color: rgb(170, 171, 208);
-  box-shadow: 0 0 0.5rem rgb(145, 174, 228);
+  background-color: var(--color-modo-oscuro);
+  box-shadow: 0 0 0.5rem var(--color-modo-oscuro);
 }
 
+@media (max-width: 374px) {
+  .boton-modos-noche {
+    margin-left: 29%;
+  }
+}
+@media (max-width: 1024px) {
+  .boton-modo-noche {
+    display: none;
+  }
+  .modo {
+    display: none;
+  }
+}
 @media (min-width: 375px) {
   .logo {
     width: 6rem;
@@ -179,15 +192,36 @@
   .div-logo {
     gap: 0;
   }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
   .boton-modos-noche {
     margin-left: 26%;
   }
 }
-@media (min-width: 425px) {
+@media (min-width: 424px) and (max-width: 435px) {
   .boton-modos-noche {
     margin-left: 24%;
   }
 }
+
+@media (min-width: 435px) and (max-width: 535px) {
+  .boton-modos-noche {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 535px) and (max-width: 635px) {
+  .boton-modos-noche {
+    margin-left: 18%;
+  }
+}
+
+@media (min-width: 635px) and (max-width: 768px) {
+  .boton-modos-noche {
+    margin-left: 15%;
+  }
+}
+
 @media (min-width: 768px) {
   .heading1 {
     width: 20rem;
@@ -197,9 +231,16 @@
   .logo {
     margin-left: 0;
   }
-  .boton-modos-noche {
+@media (min-width: 768px) and (max-width: 850px) {
+     .boton-modos-noche {
     margin-left: 13%;
   }
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+  .boton-modos-noche {
+ margin-left: 10%;
+}
 }
 
 @media (min-width: 1024px) {
@@ -267,7 +308,6 @@
   }
 }
 @media (min-width: 1560px) {
-
   .modo-oscuro {
     margin-left: 2.8rem;
   }
