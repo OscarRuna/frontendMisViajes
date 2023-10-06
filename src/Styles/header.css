@@ -231,6 +231,7 @@
   .logo {
     margin-left: 0;
   }
+}
 @media (min-width: 768px) and (max-width: 850px) {
      .boton-modos-noche {
     margin-left: 13%;
@@ -260,6 +261,9 @@
     width: 100%;
     flex-flow: row-reverse;
     margin-right: 8rem;
+  }
+  .nav-menu {
+    display: none;
   }
 
   .nav-revert {
